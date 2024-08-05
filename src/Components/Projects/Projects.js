@@ -1,8 +1,10 @@
 function Projects () {
     return(
-        <div>
-            <h1>Hello World!</h1>
-        </div>
+        <section id="projects">
+            <div className="text">
+                <h1>Hello World!</h1>
+            </div>
+        </section>
     )
     ;
 };

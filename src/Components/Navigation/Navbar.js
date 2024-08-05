@@ -1,29 +1,35 @@
 import React from "react";
-import { NavLink } from "react-bootstrap";
+import './Navbar.css';
+import { HashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs.production";
 import { useEffect } from "react";
 
 const Navbar = () => {
-    useEffect(() => window.scrollTo({ top: 500, behavior: "smooth" }), []);
     return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <ul className="navbar-nav">
-            <li className="nav-item active">
-                <a className="nav-link" href="/about">
-                About <span className="sr-only"></span>
-                </a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="/projects">
-                Projects
-                </a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                Contact
-                </a>
-            </li>
-            </ul>
-    </nav>
+        <nav className="navbar navbar-expand-lg">
+                <ul className="navbar-nav">
+                <li className="nav-item">
+                    <HashLink smooth to= '/#about'>
+                    <a className="nav-link" href="/about">
+                    About <span className="sr-only"></span>
+                    </a>
+                    </HashLink>
+                </li>
+                <li className="nav-item">
+                    <HashLink smooth to= '/#projects'>
+                    <a className="nav-link" href="/projects">
+                    Projects
+                    </a>
+                    </HashLink>
+                </li>
+                <li className="nav-item">
+                    <HashLink smooth to= '/#contact'>
+                    <a className="nav-link" href="/contact">
+                    Contact
+                    </a>
+                    </HashLink>
+                </li>
+                </ul>
+        </nav>
     )
-}
+};
 export default Navbar;

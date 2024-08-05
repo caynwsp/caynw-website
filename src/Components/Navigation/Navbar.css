@@ -1,3 +1,10 @@
-ul {
-    background-color: black;
+.navbar {
+    background-color: #1e3837;
+    color: whitesmoke;
+  }
+
+.nav-link {
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+  

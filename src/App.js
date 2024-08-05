@@ -15,15 +15,12 @@ function App() {
   return (
     <div className='App'>
       <Navbar />
-      <nav className='navbar'></nav>
       <ParallaxProvider>
       <AdvancedBannerTop /> 
       <Header />
-        <Routes>
-        <Route path='/about' element={<About/>} />
-        <Route path='/projects' element={<Projects/>} />
-        <Route path='/Contact' element={<Contact/>} />
-      </Routes>
+      <About />
+      <Projects />
+      <Contact />
       <Footer />
       </ParallaxProvider>
     </div>

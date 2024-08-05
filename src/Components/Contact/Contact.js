@@ -1,9 +1,11 @@
 
 function Contact () {
     return(
-        <div>
-            <h1>Hello there!</h1>
-        </div>
+        <section id="contact">
+            <div className="text">
+                <h1>Hello there!</h1>
+            </div>
+        </section>
     );
 };
 
